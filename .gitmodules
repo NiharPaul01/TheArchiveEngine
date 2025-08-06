@@ -1,0 +1,3 @@
+[submodule "TheArchiveEngine/vendor/spdlog"]
+	path = TheArchiveEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
