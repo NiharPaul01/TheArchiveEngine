@@ -1,27 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="TheArchiveEngine">
+      <UniqueIdentifier>{9E804E54-8A79-6DA6-B3AB-522B9F034DB2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\TheArchiveEngine.h" />
+    <ClInclude Include="src\TheArchiveEngine\Application.h">
+      <Filter>TheArchiveEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TheArchiveEngine\Core.h">
+      <Filter>TheArchiveEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TheArchiveEngine\EntryPoint.h">
+      <Filter>TheArchiveEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TheArchiveEngine\Log.h">
+      <Filter>TheArchiveEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="src\TheArchiveEngine\Application.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>TheArchiveEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TheArchiveEngine\Log.cpp">
+      <Filter>TheArchiveEngine</Filter>
     </ClCompile>
     <ClCompile Include="src\TheArchiveEngine\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+<<<<<<< HEAD
+=======
   <ItemGroup>
     <ClInclude Include="src\TheArchiveEngine\Application.h">
       <Filter>Header Files</Filter>
@@ -39,4 +50,5 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+>>>>>>> 22c5fff9279f6e16dfeab983e942447013575d04
 </Project>
