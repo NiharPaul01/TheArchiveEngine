@@ -24,6 +24,7 @@ workspace "TheArchiveEngine"
 
 
 		includedirs{
+			"%{prj.name}/src",
 			"%{prj.name}/vendor/spdlog/include"
 		}
 
@@ -71,8 +72,9 @@ project "Sandbox"
 
 
 		includedirs{
+			
 			"TheArchiveEngine/vendor/spdlog/include",
-			"TheArchiveEngine/Src"
+			"TheArchiveEngine/src"
 		}
 
 		links {

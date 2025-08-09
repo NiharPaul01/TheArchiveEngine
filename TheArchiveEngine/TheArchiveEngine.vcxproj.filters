@@ -4,6 +4,9 @@
     <Filter Include="TheArchiveEngine">
       <UniqueIdentifier>{9E804E54-8A79-6DA6-B3AB-522B9F034DB2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="TheArchiveEngine\Events">
+      <UniqueIdentifier>{C28E1537-2EC6-5DCE-37D0-C1F1A38684C7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\TheArchiveEngine.h" />
@@ -16,6 +19,18 @@
     <ClInclude Include="src\TheArchiveEngine\EntryPoint.h">
       <Filter>TheArchiveEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\TheArchiveEngine\Events\ApplicationEvent.h">
+      <Filter>TheArchiveEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TheArchiveEngine\Events\Event.h">
+      <Filter>TheArchiveEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TheArchiveEngine\Events\KeyEvent.h">
+      <Filter>TheArchiveEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TheArchiveEngine\Events\MouseEvent.h">
+      <Filter>TheArchiveEngine\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\TheArchiveEngine\Log.h">
       <Filter>TheArchiveEngine</Filter>
     </ClInclude>
@@ -27,28 +42,5 @@
     <ClCompile Include="src\TheArchiveEngine\Log.cpp">
       <Filter>TheArchiveEngine</Filter>
     </ClCompile>
-    <ClCompile Include="src\TheArchiveEngine\Log.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
-<<<<<<< HEAD
-=======
-  <ItemGroup>
-    <ClInclude Include="src\TheArchiveEngine\Application.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\TheArchiveEngine\Core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\TheArchiveEngine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\TheArchiveEngine\EntryPoint.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\TheArchiveEngine\Log.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
->>>>>>> 22c5fff9279f6e16dfeab983e942447013575d04
 </Project>

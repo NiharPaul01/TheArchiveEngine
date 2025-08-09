@@ -9,24 +9,10 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-<<<<<<< HEAD
     <ProjectConfiguration Include="Dist|x64">
       <Configuration>Dist</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-=======
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\TheArchiveEngine\Log.cpp" />
-    <ClCompile Include="src\TheArchiveEngine\Application.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\TheArchiveEngine\Log.h" />
-    <ClInclude Include="src\TheArchiveEngine.h" />
-    <ClInclude Include="src\TheArchiveEngine\Application.h" />
-    <ClInclude Include="src\TheArchiveEngine\Core.h" />
-    <ClInclude Include="src\TheArchiveEngine\EntryPoint.h" />
->>>>>>> 22c5fff9279f6e16dfeab983e942447013575d04
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9E804E54-8A79-6DA6-B3AB-522B9F034DB2}</ProjectGuid>
@@ -92,22 +78,14 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-<<<<<<< HEAD
       <PreprocessorDefinitions>AE_PLATFORM_WINDOWS;AE_BUILD_DLL;AE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
-=======
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>AE_PLATFORM_WINDOWS;AE_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)TheArchiveEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
->>>>>>> 22c5fff9279f6e16dfeab983e942447013575d04
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -123,24 +101,16 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>AE_PLATFORM_WINDOWS;AE_BUILD_DLL;AE_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-<<<<<<< HEAD
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
-=======
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>AE_PLATFORM_WINDOWS;AE_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)TheArchiveEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
->>>>>>> 22c5fff9279f6e16dfeab983e942447013575d04
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -157,7 +127,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>AE_PLATFORM_WINDOWS;AE_BUILD_DLL;AE_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -183,6 +153,10 @@
     <ClInclude Include="src\TheArchiveEngine\Application.h" />
     <ClInclude Include="src\TheArchiveEngine\Core.h" />
     <ClInclude Include="src\TheArchiveEngine\EntryPoint.h" />
+    <ClInclude Include="src\TheArchiveEngine\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\TheArchiveEngine\Events\Event.h" />
+    <ClInclude Include="src\TheArchiveEngine\Events\KeyEvent.h" />
+    <ClInclude Include="src\TheArchiveEngine\Events\MouseEvent.h" />
     <ClInclude Include="src\TheArchiveEngine\Log.h" />
   </ItemGroup>
   <ItemGroup>

@@ -2,6 +2,7 @@
 
 
 #include "Core.h"
+#include "Events/Event.h"
 
 namespace TheArchiveEngine {
 	class THEARCHIVEENGINE_API Application {
