@@ -34,6 +34,7 @@
     <ClInclude Include="src\TheArchiveEngine\Log.h">
       <Filter>TheArchiveEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\aepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\TheArchiveEngine\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\TheArchiveEngine\Log.cpp">
       <Filter>TheArchiveEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\aepch.cpp" />
   </ItemGroup>
 </Project>

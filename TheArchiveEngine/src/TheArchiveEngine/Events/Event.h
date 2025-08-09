@@ -2,8 +2,6 @@
 
 #include <TheArchiveEngine/Core.h>
 
-#include <string>
-#include <functional>
 
 namespace TheArchiveEngine {
 	enum class EventType {

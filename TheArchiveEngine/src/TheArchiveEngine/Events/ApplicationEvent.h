@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream> 
-
 namespace TheArchiveEngine {
 	class THEARCHIVEENGINE_API WindowResizeEvent : public Event {
 	public:

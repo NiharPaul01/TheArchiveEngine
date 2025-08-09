@@ -17,6 +17,9 @@ workspace "TheArchiveEngine"
 		targetdir("bin/" .. outputdir .. "/%{prj.name}")
 		objdir("bin-int/" .. outputdir .. "/%{prj.name}")
 
+		pchheader "aepch.h"
+		pchsource "TheArchiveEngine/src/aepch.cpp"
+
 		files{
 			"%{prj.name}/src/**.h",
 			"%{prj.name}/src/**.cpp"
