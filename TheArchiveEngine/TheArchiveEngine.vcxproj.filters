@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
     <Filter Include="TheArchiveEngine">
       <UniqueIdentifier>{9E804E54-8A79-6DA6-B3AB-522B9F034DB2}</UniqueIdentifier>
     </Filter>
@@ -9,6 +12,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\WindowsWindow.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
     <ClInclude Include="src\TheArchiveEngine.h" />
     <ClInclude Include="src\TheArchiveEngine\Application.h">
       <Filter>TheArchiveEngine</Filter>
@@ -34,9 +40,15 @@
     <ClInclude Include="src\TheArchiveEngine\Log.h">
       <Filter>TheArchiveEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\TheArchiveEngine\Window.h">
+      <Filter>TheArchiveEngine</Filter>
+    </ClInclude>
     <ClInclude Include="src\aepch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\WindowsWindow.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
     <ClCompile Include="src\TheArchiveEngine\Application.cpp">
       <Filter>TheArchiveEngine</Filter>
     </ClCompile>

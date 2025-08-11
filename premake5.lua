@@ -9,6 +9,12 @@ workspace "TheArchiveEngine"
 
 	outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+	-- Include directories relative to root folder (solution directory)
+	IncludeDir = {}
+	IncludeDir["GLFW"] = "TheArchiveEngine/vendor/GLFW/include"
+
+	include "TheArchiveEngine/vendor/GLFW"
+
 	project "TheArchiveEngine"
 		location "TheArchiveEngine"
 		kind "SharedLib"
@@ -28,7 +34,13 @@ workspace "TheArchiveEngine"
 
 		includedirs{
 			"%{prj.name}/src",
-			"%{prj.name}/vendor/spdlog/include"
+			"%{prj.name}/vendor/spdlog/include",
+			"%{IncludeDir.GLFW}"
+		}
+
+		links{
+			"GLFW",
+			"opengl32.lib"
 		}
 
 

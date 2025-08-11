@@ -13,6 +13,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include <TheArchiveEngine/Log.h>
+
 
 #ifdef AE_PLATFORM_WINDOWS
 #include <Windows.h>
