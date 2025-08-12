@@ -11,6 +11,7 @@ int main(int argc, char** argv) {
 	AE_CORE_WARN("Initial setup of Log CoreLogger");
 	int a = 5;
 	AE_INFO("Hello Var={0}" , a);
+	AE_INFO("CYAN COLOR WINDOW");
 
 	auto app = TheArchiveEngine::CreateApplication();
 

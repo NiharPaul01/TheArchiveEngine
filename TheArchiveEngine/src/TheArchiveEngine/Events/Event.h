@@ -1,6 +1,7 @@
 #pragma once
 
 #include <TheArchiveEngine/Core.h>
+#include<aepch.h>
 
 
 namespace TheArchiveEngine {
