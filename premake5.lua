@@ -46,7 +46,6 @@ workspace "TheArchiveEngine"
 
 		filter "system:windows"
 			cppdialect "C++17"
-			staticruntime "On"
 			systemversion "latest"
 
 			buildoptions { "/utf-8" }
@@ -62,14 +61,20 @@ workspace "TheArchiveEngine"
 
 		filter "configurations:Debug"
 			defines "AE_DEBUG"
+			staticruntime "off"
+			runtime "Debug"
 			symbols "On"
 			
 		filter "configurations:Release"
 			defines "AE_RELEASE"
+			staticruntime "off"
+			runtime "Release"
 			optimize "On"
 
 		filter "configurations:Dist"
 			defines "AE_DIST"
+			staticruntime "off"
+			runtime "Release"
 			optimize "On"
 
 project "Sandbox"
@@ -98,7 +103,6 @@ project "Sandbox"
 
 		filter "system:windows"
 			cppdialect "C++17"
-			staticruntime "On"
 			systemversion "latest"
 
 
@@ -114,12 +118,18 @@ project "Sandbox"
 
 		filter "configurations:Debug"
 			defines "AE_DEBUG"
+			staticruntime "off"
+			runtime "Debug"
 			symbols "On"
 			
 		filter "configurations:Release"
 			defines "AE_RELEASE"
+			staticruntime "off"
+			runtime "Release"
 			optimize "On"
 
 		filter "configurations:Dist"
 			defines "AE_DIST"
+			staticruntime "off"
+			runtime "Release"
 			optimize "On"

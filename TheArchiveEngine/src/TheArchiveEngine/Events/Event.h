@@ -41,6 +41,9 @@ namespace TheArchiveEngine {
 		inline bool IsInCategory(EventCategory category) {
 			return GetCategoryFlags() & category;
 		}
+
+	public:
+		bool IsHandled() const { return m_Handled; }
 	protected:
 		bool m_Handled = false;
 

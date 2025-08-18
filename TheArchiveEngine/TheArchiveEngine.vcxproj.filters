@@ -37,6 +37,12 @@
     <ClInclude Include="src\TheArchiveEngine\Events\MouseEvent.h">
       <Filter>TheArchiveEngine\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\TheArchiveEngine\Layer.h">
+      <Filter>TheArchiveEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TheArchiveEngine\LayerStack.h">
+      <Filter>TheArchiveEngine</Filter>
+    </ClInclude>
     <ClInclude Include="src\TheArchiveEngine\Log.h">
       <Filter>TheArchiveEngine</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
       <Filter>Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\TheArchiveEngine\Application.cpp">
+      <Filter>TheArchiveEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TheArchiveEngine\Layer.cpp">
+      <Filter>TheArchiveEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TheArchiveEngine\LayerStack.cpp">
       <Filter>TheArchiveEngine</Filter>
     </ClCompile>
     <ClCompile Include="src\TheArchiveEngine\Log.cpp">
