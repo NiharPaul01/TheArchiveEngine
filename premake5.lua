@@ -12,8 +12,10 @@ workspace "TheArchiveEngine"
 	-- Include directories relative to root folder (solution directory)
 	IncludeDir = {}
 	IncludeDir["GLFW"] = "TheArchiveEngine/vendor/GLFW/include"
+	IncludeDir["Glad"] = "TheArchiveEngine/vendor/Glad/include"
 
 	include "TheArchiveEngine/vendor/GLFW"
+	include "TheArchiveEngine/vendor/Glad"
 
 	project "TheArchiveEngine"
 		location "TheArchiveEngine"
@@ -35,11 +37,13 @@ workspace "TheArchiveEngine"
 		includedirs{
 			"%{prj.name}/src",
 			"%{prj.name}/vendor/spdlog/include",
-			"%{IncludeDir.GLFW}"
+			"%{IncludeDir.GLFW}",
+			"%{IncludeDir.Glad}"
 		}
 
 		links{
 			"GLFW",
+			"Glad",
 			"opengl32.lib"
 		}
 
@@ -53,6 +57,7 @@ workspace "TheArchiveEngine"
 			defines{
 					"AE_PLATFORM_WINDOWS",
 					"AE_BUILD_DLL",
+					"GLFW_INCLUDE_NONE"
 					
 			}
 			postbuildcommands{
@@ -61,19 +66,19 @@ workspace "TheArchiveEngine"
 
 		filter "configurations:Debug"
 			defines "AE_DEBUG"
-			staticruntime "off"
+			staticruntime "Off"
 			runtime "Debug"
 			symbols "On"
 			
 		filter "configurations:Release"
 			defines "AE_RELEASE"
-			staticruntime "off"
+			staticruntime "Off"
 			runtime "Release"
 			optimize "On"
 
 		filter "configurations:Dist"
 			defines "AE_DIST"
-			staticruntime "off"
+			staticruntime "Off"
 			runtime "Release"
 			optimize "On"
 
@@ -118,18 +123,18 @@ project "Sandbox"
 
 		filter "configurations:Debug"
 			defines "AE_DEBUG"
-			staticruntime "off"
+			staticruntime "Off"
 			runtime "Debug"
 			symbols "On"
 			
 		filter "configurations:Release"
 			defines "AE_RELEASE"
-			staticruntime "off"
+			staticruntime "Off"
 			runtime "Release"
 			optimize "On"
 
 		filter "configurations:Dist"
 			defines "AE_DIST"
-			staticruntime "off"
+			staticruntime "Off"
 			runtime "Release"
 			optimize "On"

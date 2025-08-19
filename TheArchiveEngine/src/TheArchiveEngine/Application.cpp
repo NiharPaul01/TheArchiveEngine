@@ -4,7 +4,7 @@
 
 #include "TheArchiveEngine/Log.h"
 
-#include <GLFW/glfw3.h>
+#include <glad/gl.h>
 
 
 namespace TheArchiveEngine {
@@ -14,6 +14,7 @@ namespace TheArchiveEngine {
 	Application::Application() {
 		m_Window = std::unique_ptr<Window>(Window::Create());
 		m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
+
 	}
 
 	Application::~Application() {
