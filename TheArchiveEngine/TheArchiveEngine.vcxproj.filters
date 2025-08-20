@@ -4,16 +4,28 @@
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
     <Filter Include="TheArchiveEngine">
       <UniqueIdentifier>{9E804E54-8A79-6DA6-B3AB-522B9F034DB2}</UniqueIdentifier>
     </Filter>
     <Filter Include="TheArchiveEngine\Events">
       <UniqueIdentifier>{C28E1537-2EC6-5DCE-37D0-C1F1A38684C7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="TheArchiveEngine\ImGui">
+      <UniqueIdentifier>{4874A8EA-346E-D13C-1DDB-674D097437A9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Platform\WindowsWindow.h">
-      <Filter>Platform</Filter>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\TheArchiveEngine.h" />
     <ClInclude Include="src\TheArchiveEngine\Application.h">
@@ -37,6 +49,9 @@
     <ClInclude Include="src\TheArchiveEngine\Events\MouseEvent.h">
       <Filter>TheArchiveEngine\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\TheArchiveEngine\ImGui\ImGuiLayer.h">
+      <Filter>TheArchiveEngine\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\TheArchiveEngine\Layer.h">
       <Filter>TheArchiveEngine</Filter>
     </ClInclude>
@@ -52,11 +67,17 @@
     <ClInclude Include="src\aepch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Platform\WindowsWindow.cpp">
-      <Filter>Platform</Filter>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\TheArchiveEngine\Application.cpp">
       <Filter>TheArchiveEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TheArchiveEngine\ImGui\ImGuiLayer.cpp">
+      <Filter>TheArchiveEngine\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\TheArchiveEngine\Layer.cpp">
       <Filter>TheArchiveEngine</Filter>

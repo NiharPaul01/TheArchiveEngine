@@ -4,3 +4,6 @@
 [submodule "TheArchiveEngine/vendor/GLFW"]
 	path = TheArchiveEngine/vendor/GLFW
 	url = https://github.com/TheCherno/GLFW
+[submodule "TheArchiveEngine/vendor/imgui"]
+	path = TheArchiveEngine/vendor/imgui
+	url = https://github.com/TheCherno/imgui.git

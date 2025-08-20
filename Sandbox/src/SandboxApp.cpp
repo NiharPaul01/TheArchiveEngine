@@ -34,6 +34,7 @@ class Sandbox : public TheArchiveEngine::Application {
 public:
 	Sandbox() {
 		PushLayer(new ExampleLayer());
+		PushOverlay(new TheArchiveEngine::ImGuiLayer());
 
 	}
 
