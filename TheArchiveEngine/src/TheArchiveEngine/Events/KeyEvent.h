@@ -38,10 +38,10 @@ namespace TheArchiveEngine {
 
 	};
 
-	class THEARCHIVEENGINE_API keyReleasedEvent : public KeyEvent {
+	class THEARCHIVEENGINE_API KeyReleasedEvent : public KeyEvent {
 
 	public:
-		keyReleasedEvent(int keycode)
+		KeyReleasedEvent(int keycode)
 			: KeyEvent(keycode) {} 
 
 		std::string ToString() const override {
@@ -51,5 +51,21 @@ namespace TheArchiveEngine {
 		}
 
 		EVENT_CLASS_TYPE(KeyReleased)
+	};
+
+
+	class THEARCHIVEENGINE_API KeyTypedEvent : public KeyEvent {
+	public:
+		KeyTypedEvent(int keycode)
+			: KeyEvent(keycode) {}
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "KeyTypedEvent: " << m_KeyCode;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyTyped)
 	};
 }
