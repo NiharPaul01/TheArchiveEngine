@@ -1,5 +1,6 @@
 workspace "TheArchiveEngine"
 	architecture "x64"
+	startproject "Sandbox"
 
 	configurations {
 		"Debug",
@@ -15,14 +16,20 @@ workspace "TheArchiveEngine"
 	IncludeDir["Glad"] = "TheArchiveEngine/vendor/Glad/include"
 	IncludeDir["ImGui"] = "TheArchiveEngine/vendor/imgui"
 
-	include "TheArchiveEngine/vendor/GLFW"
-	include "TheArchiveEngine/vendor/Glad"
-	include "TheArchiveEngine/vendor/imgui"
+	group "Dependencies"
+		include "TheArchiveEngine/vendor/GLFW"
+		include "TheArchiveEngine/vendor/Glad"
+		include "TheArchiveEngine/vendor/imgui"
+
+
+
+	
 
 	project "TheArchiveEngine"
 		location "TheArchiveEngine"
 		kind "SharedLib"
 		language "C++"
+		staticruntime "Off"
 
 		targetdir("bin/" .. outputdir .. "/%{prj.name}")
 		objdir("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -58,6 +65,8 @@ workspace "TheArchiveEngine"
 
 			buildoptions { "/utf-8" }
 
+			optimize "On"
+
 			defines{
 					"AE_PLATFORM_WINDOWS",
 					"AE_BUILD_DLL",
@@ -65,7 +74,7 @@ workspace "TheArchiveEngine"
 					
 			}
 			postbuildcommands{
-				"{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox/"
+				"{COPY} %{cfg.buildtarget.relpath} \" ../bin/" .. outputdir .. "/Sandbox/"
 			}
 
 		filter "configurations:Debug"
